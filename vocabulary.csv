@@ -11,6 +11,7 @@ Metadata about vocabulary
 dct:title,test,Title of the vocabulary
 dct:description,test,Description of the controlled vocabulary
 dct:creator,Hannah
+dct:creator,Minka
 dct:rights,,License under which the vocabulary is provided
 pav:version,,Vocabulary version
 pav:createdOn,,Date when vocabulary was initially created (follow https://en.wikipedia.org/wiki/ISO_8601)
