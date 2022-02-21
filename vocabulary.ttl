@@ -1,32 +1,23 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vars: <http://purl.org/test2/variables/> .
+@prefix vars: <http://purl.org/test3/variables/> .
 
-<http://purl.org/test2/variables/> a skos:Concept, skos:ConceptScheme;
-  dct:creator "Hannah"@en;
-  dct:description "Test for showcase purposes"@en;
-  dct:title "Test2 vocabulary"@en;
-  skos:hasTopConcept <http://purl.org/test2/variables/>, vars:Computerscience, vars:Computerscientist,
-    vars:Test;
-  skos:inScheme <http://purl.org/test2/variables/>;
-  skos:topConceptOf <http://purl.org/test2/variables/> .
+<http://purl.org/test3/variables/> a skos:Concept, skos:ConceptScheme;
+  dct:creator "Hannah"@en, "Minka"@en;
+  dct:description "test"@en;
+  dct:title "test"@en;
+  skos:hasTopConcept <http://purl.org/test3/variables/>, vars:computerscientist, vars:test;
+  skos:inScheme <http://purl.org/test3/variables/>;
+  skos:topConceptOf <http://purl.org/test3/variables/> .
 
-vars:Test a skos:Concept;
-  skos:definition "Test for technical setup"@en;
-  skos:inScheme <http://purl.org/test2/variables/>;
-  skos:prefLabel "Test"@en;
-  skos:topConceptOf <http://purl.org/test2/variables/> .
+vars:test a skos:Concept;
+  skos:inScheme <http://purl.org/test3/variables/>;
+  skos:prefLabel "test"@en;
+  skos:topConceptOf <http://purl.org/test3/variables/> .
 
-vars:Computerscientist a skos:Concept;
-  dct:source vars:Computerscience;
-  skos:definition "person that studied computerscience"@en;
-  skos:inScheme <http://purl.org/test2/variables/>;
-  skos:prefLabel "Computerscientist"@en;
-  skos:topConceptOf <http://purl.org/test2/variables/> .
-
-vars:Computerscience a skos:Concept;
-  skos:definition "studies of computers"@en;
-  skos:inScheme <http://purl.org/test2/variables/>;
-  skos:prefLabel "Computerscience"@en;
-  skos:topConceptOf <http://purl.org/test2/variables/> .
+vars:computerscientist a skos:Concept;
+  skos:definition "a person that knows stuff about computers"@en;
+  skos:inScheme <http://purl.org/test3/variables/>;
+  skos:prefLabel "computerscientist"@en;
+  skos:topConceptOf <http://purl.org/test3/variables/> .
