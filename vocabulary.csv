@@ -12,6 +12,7 @@ dct:title,test,Title of the vocabulary
 dct:description,test,Description of the controlled vocabulary
 dct:creator,Hannah
 dct:creator,Minka
+dct:creator,Joseph
 dct:rights,,License under which the vocabulary is provided
 pav:version,,Vocabulary version
 pav:createdOn,,Date when vocabulary was initially created (follow https://en.wikipedia.org/wiki/ISO_8601)
@@ -21,7 +22,7 @@ Definition of terms (optionally properties)
 Identifier,skos:prefLabel@en,"qudt:unit(separator="","")","skos:altLabel(separator="";"")",skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
 vars:test,test
 vars:computerscientist,computerscientist,,,a person that knows stuff about computers
-vars:
+vars:datascientist,datascientist,,,a person that knows stuff about data
 vars:
 vars:
 vars:
