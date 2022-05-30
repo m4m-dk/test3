@@ -1,6 +1,6 @@
-ConceptScheme URI,http://purl.org/m4m-dk-Test4/variables/,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers if they are properly configured and managed.,,,,,,,,,,@
+ConceptScheme URI,http://purl.org/test3/variables/,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers if they are properly configured and managed.,,,,,,,,,,@
 "Prefixes for controlled vocabularies, schema and ontologies"
-PREFIX,vars,http://purl.org/m4m-dk-Test4/variables/,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
+PREFIX,vars,http://purl.org/test3/variables/,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
 PREFIX,skos,http://www.w3.org/2004/02/skos/core#,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
 PREFIX,pav,http://purl.org/pav/ ,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
 PREFIX,dct,http://purl.org/dc/terms/ ,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
@@ -8,9 +8,10 @@ PREFIX,qudt,http://qudt.org/schema/qudt/,"Prefix for ""Quantity, Unit, Dimension
 PREFIX,unit,http://qudt.org/vocab/unit/,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
 Metadata about vocabulary
 
-dct:title,,Title of the vocabulary
-dct:description,,Description of the controlled vocabulary
-dct:creator
+dct:title,test,Title of the vocabulary
+dct:description,test,Description of the controlled vocabulary
+dct:creator,Hannah
+dct:creator,Minka
 dct:rights,,License under which the vocabulary is provided
 pav:version,,Vocabulary version
 pav:createdOn,,Date when vocabulary was initially created (follow https://en.wikipedia.org/wiki/ISO_8601)
@@ -18,8 +19,8 @@ pav:lastUpdatedOn,,Date of the last vocabulary update
 Definition of terms (optionally properties)
 
 Identifier,skos:prefLabel@en,"qudt:unit(separator="","")","skos:altLabel(separator="";"")",skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vars:
-vars:
+vars:test,test
+vars:computerscientist,computerscientist,,,a person that knows stuff about computers
 vars:
 vars:
 vars:
